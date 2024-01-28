@@ -90,8 +90,8 @@
     padding: 40px 160px;
   }
 
-  .slides.layout-widescreen > article:not(.nobackground):not(.biglogo),
-  .slides.layout-faux-widescreen > article:not(.nobackground):not(.biglogo) {
+  .slides.layout-widescreen > article:not(.nobackground):not(.biloggero),
+  .slides.layout-faux-widescreen > article:not(.nobackground):not(.biloggero) {
     background-position-x: 0, 840px;
   }
 

@@ -67,7 +67,7 @@ import "fmt" guaranteed to read exactly one file.
 
 * Engineering: Imports
 
-	$ go get github.com/golang/glog
+	$ go get github.com/khulnasoft-lab/godep/logger
 
 .play distsys/hello1.go
 
@@ -77,17 +77,17 @@ Import name space is decentralized.
 
 * Engineering: Program Rewrites
 
-	$ gofmt -r 'glog.Infof -> glog.Errorf' hello1.go
+	$ gofmt -r 'logger.Infof -> logger.Errorf' hello1.go
 	package main
 	
 	import (
 		"flag"
-		"github.com/golang/glog"
+		"github.com/khulnasoft-lab/godep/logger"
 	)
 	
 	func main() {
 		flag.Set("logtostderr", "true")
-		glog.Errorf("hello, world")
+		logger.Errorf("hello, world")
 	}
 	$ 
 

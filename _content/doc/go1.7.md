@@ -34,7 +34,7 @@ We expect almost all Go programs to continue to compile and run as before.
 The release [adds a port to IBM LinuxOne](#ports);
 [updates the x86-64 compiler back end](#compiler) to generate more efficient code;
 includes the [context package](#context), promoted from the
-[x/net subrepository](https://golang.org/x/net/context)
+[x/net subrepository](https://github.com/khulnasoft-lab/godep/net/context)
 and now used in the standard library;
 and [adds support in the testing package](#testing) for
 creating hierarchies of tests and benchmarks.
@@ -308,7 +308,7 @@ substantial stack size fluctuation, or large package-level variables.
 
 ### Context {#context}
 
-Go 1.7 moves the `golang.org/x/net/context` package
+Go 1.7 moves the `github.com/khulnasoft-lab/godep/net/context` package
 into the standard library as [`context`](/pkg/context/).
 This allows the use of contexts for cancellation, timeouts, and passing
 request-scoped data in other standard library packages,

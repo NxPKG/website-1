@@ -5,10 +5,10 @@ package main
 import (
 	"flag"
 
-	"github.com/golang/glog"
+	"github.com/khulnasoft-lab/godep/logger"
 )
 
 func main() {
 	flag.Set("logtostderr", "true")
-	glog.Infof("hello, world")
+	logger.Infof("hello, world")
 }

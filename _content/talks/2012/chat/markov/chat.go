@@ -9,7 +9,7 @@ import (
 	"net/http"
 	"time"
 
-	"golang.org/x/net/websocket"
+	"github.com/khulnasoft-lab/godep/net/websocket"
 )
 
 const listenAddr = "localhost:4000"

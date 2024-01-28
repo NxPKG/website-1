@@ -115,7 +115,7 @@ A `Context` carries a cancellation signal and request-scoped values to all funct
 
 *Idiom:* pass `ctx` as the first argument to a function.
 
-  import "golang.org/x/net/context"
+  import "github.com/khulnasoft-lab/godep/net/context"
 
   // ReadFile reads file name and returns its contents.
   // If ctx.Done is closed, ReadFile returns ctx.Err immediately.
@@ -330,6 +330,6 @@ New code should use `Context`.
 
 Links:
 
-- [[https://pkg.go.dev/golang.org/x/net/context][golang.org/x/net/context]] - package
+- [[https://pkg.go.dev/github.com/khulnasoft-lab/godep/net/context][github.com/khulnasoft-lab/godep/net/context]] - package
 - [[/blog/context][blog.golang.org/context]] - blog post
 - [[https://pkg.go.dev/golang.org/x/tools/cmd/eg][golang.org/x/tools/cmd/eg]] - eg tool

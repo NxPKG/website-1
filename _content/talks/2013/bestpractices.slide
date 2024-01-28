@@ -91,7 +91,7 @@ Import statements, related groups separated by blank lines.
 		"io"
 		"log"
 
-		"golang.org/x/net/websocket"
+		"github.com/khulnasoft-lab/godep/net/websocket"
 	)
 
 The rest of the code starting with the most significant types, and ending

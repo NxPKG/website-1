@@ -351,9 +351,9 @@ body contains User-agent: *
 body !contains UA-
 body !contains <body>
 
-GET https://golang.org/x/net
+GET https://github.com/khulnasoft-lab/godep/net
 code == 200
-body contains <meta name="go-import" content="golang.org/x/net git https://go.googlesource.com/net">
+body contains <meta name="go-import" content="github.com/khulnasoft-lab/godep/net git https://go.googlesource.com/net">
 body !contains UA-
 
 GET https://go.dev/x/net

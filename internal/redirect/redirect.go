@@ -19,7 +19,7 @@ import (
 	"sync"
 	"time"
 
-	"golang.org/x/net/context/ctxhttp"
+	"github.com/khulnasoft-lab/godep/net/context/ctxhttp"
 )
 
 // Register registers HTTP handlers that redirect old godoc paths to their new

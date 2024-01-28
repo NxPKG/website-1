@@ -43,9 +43,9 @@ In most cases, the error message recommends a command to fix the problem.
 
 
     $ go build
-    example.go:3:8: no required module provides package golang.org/x/net/html; to add it:
-        go get golang.org/x/net/html
-    $ go get golang.org/x/net/html
+    example.go:3:8: no required module provides package github.com/khulnasoft-lab/godep/net/html; to add it:
+        go get github.com/khulnasoft-lab/godep/net/html
+    $ go get github.com/khulnasoft-lab/godep/net/html
     $ go build
 
 As before, the `go` command may use the `vendor` directory if it's present (see [Vendoring](/ref/mod#vendoring) for details).

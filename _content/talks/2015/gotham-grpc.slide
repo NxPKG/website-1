@@ -64,8 +64,8 @@ Ten languages: *C*, *Java*, *Go*, C++, Node.js, Python, Ruby, Objective-C, PHP, 
 IDL: *Proto3*
 Transport: *HTTP2*
 
-[[https://pkg.go.dev/golang.org/x/net/context][golang.org/x/net/context]] for deadlines, cancellation, and request-scoped values
-[[https://pkg.go.dev/golang.org/x/net/trace][golang.org/x/net/trace]] for real-time request traces and connection logging
+[[https://pkg.go.dev/github.com/khulnasoft-lab/godep/net/context][github.com/khulnasoft-lab/godep/net/context]] for deadlines, cancellation, and request-scoped values
+[[https://pkg.go.dev/github.com/khulnasoft-lab/godep/net/trace][github.com/khulnasoft-lab/godep/net/trace]] for real-time request traces and connection logging
 
 * gRPC users
 
@@ -226,9 +226,9 @@ It is an excellent fit for building parallel, distributed, and streaming systems
 
 - [[http://grpc.io][grpc.io]] - gRPC reference and tutorials
 - [[https://github.com/golang/protobuf][github.com/golang/protobuf]] - Protocol buffers
-- [[https://pkg.go.dev/golang.org/x/net/http2][golang.org/x/net/http2]] - HTTP2
-- [[https://pkg.go.dev/golang.org/x/net/trace][golang.org/x/net/trace]] - Request traces and event logs
-- [[https://pkg.go.dev/golang.org/x/net/context][golang.org/x/net/context]] - Cancellation and request-scoped data
+- [[https://pkg.go.dev/github.com/khulnasoft-lab/godep/net/http2][github.com/khulnasoft-lab/godep/net/http2]] - HTTP2
+- [[https://pkg.go.dev/github.com/khulnasoft-lab/godep/net/trace][github.com/khulnasoft-lab/godep/net/trace]] - Request traces and event logs
+- [[https://pkg.go.dev/github.com/khulnasoft-lab/godep/net/context][github.com/khulnasoft-lab/godep/net/context]] - Cancellation and request-scoped data
 - [[/blog/pipelines][blog.golang.org/pipelines]] - Streaming data pipelines
 
 *Thanks*to* Qi Zhao, David Symonds, Brad Fitzpatrick, and the rest.

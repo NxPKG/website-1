@@ -212,11 +212,11 @@ or
 to a non-nil, empty map.
 
 Programs that must adjust HTTP/2 protocol-specific details can import and use
-[`golang.org/x/net/http2`](https://golang.org/x/net/http2),
+[`github.com/khulnasoft-lab/godep/net/http2`](https://github.com/khulnasoft-lab/godep/net/http2),
 in particular its
-[ConfigureServer](https://godoc.org/golang.org/x/net/http2/#ConfigureServer)
+[ConfigureServer](https://godoc.org/github.com/khulnasoft-lab/godep/net/http2/#ConfigureServer)
 and
-[ConfigureTransport](https://godoc.org/golang.org/x/net/http2/#ConfigureTransport)
+[ConfigureTransport](https://godoc.org/github.com/khulnasoft-lab/godep/net/http2/#ConfigureTransport)
 functions.
 
 ### Runtime {#runtime}

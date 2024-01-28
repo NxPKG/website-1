@@ -183,13 +183,13 @@ Next, run `go mod tidy` to add the module's dependencies:
 	$ go mod tidy
 	go: finding golang.org/x/website latest
 	go: finding gopkg.in/tomb.v2 latest
-	go: finding golang.org/x/net latest
+	go: finding github.com/khulnasoft-lab/godep/net latest
 	go: finding golang.org/x/tools latest
 	go: downloading github.com/gorilla/context v1.1.1
 	go: downloading golang.org/x/tools v0.0.0-20190813214729-9dba7caff850
-	go: downloading golang.org/x/net v0.0.0-20190813141303-74dc4d7220e7
+	go: downloading github.com/khulnasoft-lab/godep/net v0.0.0-20190813141303-74dc4d7220e7
 	go: extracting github.com/gorilla/context v1.1.1
-	go: extracting golang.org/x/net v0.0.0-20190813141303-74dc4d7220e7
+	go: extracting github.com/khulnasoft-lab/godep/net v0.0.0-20190813141303-74dc4d7220e7
 	go: downloading gopkg.in/tomb.v2 v2.0.0-20161208151619-d5d1b5820637
 	go: extracting gopkg.in/tomb.v2 v2.0.0-20161208151619-d5d1b5820637
 	go: extracting golang.org/x/tools v0.0.0-20190813214729-9dba7caff850
@@ -202,7 +202,7 @@ Next, run `go mod tidy` to add the module's dependencies:
 
 	require (
 		github.com/gorilla/context v1.1.1
-		golang.org/x/net v0.0.0-20190813141303-74dc4d7220e7
+		github.com/khulnasoft-lab/godep/net v0.0.0-20190813141303-74dc4d7220e7
 		golang.org/x/text v0.3.2
 		golang.org/x/tools v0.0.0-20190813214729-9dba7caff850
 		golang.org/x/website v0.0.0-20190809153340-86a7442ada7c

@@ -2,7 +2,7 @@
 
 package main
 
-import "golang.org/x/net/context" // HL
+import "github.com/khulnasoft-lab/godep/net/context" // HL
 
 func main() {
 	ctx := context.Background()

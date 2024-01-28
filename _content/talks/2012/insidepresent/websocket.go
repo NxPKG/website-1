@@ -4,7 +4,7 @@ package main
 
 import (
 	"fmt"
-	"golang.org/x/net/websocket"
+	"github.com/khulnasoft-lab/godep/net/websocket"
 	"net/http"
 )
 

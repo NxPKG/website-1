@@ -8,7 +8,7 @@ import (
 	"log"
 	"net/http"
 
-	"golang.org/x/net/websocket"
+	"github.com/khulnasoft-lab/godep/net/websocket"
 )
 
 const listenAddr = "localhost:4000"

@@ -592,9 +592,9 @@ to how it was in Go 1.9: each connection to a server can have up to `MAX_CONCURR
 active and then new TCP connections are created as needed. In Go 1.10 and Go 1.11 the `http2` package
 would block and wait for requests to finish instead of creating new connections.
 To get the stricter behavior back, import the
-[`golang.org/x/net/http2`](https://godoc.org/golang.org/x/net/http2) package
+[`github.com/khulnasoft-lab/godep/net/http2`](https://godoc.org/github.com/khulnasoft-lab/godep/net/http2) package
 directly and set
-[`Transport.StrictMaxConcurrentStreams`](https://godoc.org/golang.org/x/net/http2#Transport.StrictMaxConcurrentStreams) to
+[`Transport.StrictMaxConcurrentStreams`](https://godoc.org/github.com/khulnasoft-lab/godep/net/http2#Transport.StrictMaxConcurrentStreams) to
 `true`.
 
 <!-- net/http -->

@@ -13,8 +13,8 @@ import (
 	_ "net/http/pprof"
 	"time"
 
-	"golang.org/x/net/context"
-	"golang.org/x/net/trace"
+	"github.com/khulnasoft-lab/godep/net/context"
+	"github.com/khulnasoft-lab/godep/net/trace"
 	pb "golang.org/x/talks/content/2015/gotham-grpc/search"
 	"google.golang.org/grpc"
 )

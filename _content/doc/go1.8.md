@@ -209,7 +209,7 @@ It has moved to the “tools” repository and is now available at
 
 <!-- CL 28872 -->
 The `fix` tool has a new “`context`”
-fix to change imports from “`golang.org/x/net/context`”
+fix to change imports from “`github.com/khulnasoft-lab/godep/net/context`”
 to “[`context`](/pkg/context/)”.
 
 ### Pprof {#tool_pprof}
@@ -941,7 +941,7 @@ depend on implementations obeying the documentation.
 
 _Updating:_ implementations of the `Conn` interface should verify
 they implement the documented semantics. The
-[golang.org/x/net/nettest](https://godoc.org/golang.org/x/net/nettest)
+[github.com/khulnasoft-lab/godep/net/nettest](https://godoc.org/github.com/khulnasoft-lab/godep/net/nettest)
 package will exercise a `Conn` and validate it behaves properly.
 
 <!-- CL 32099 -->

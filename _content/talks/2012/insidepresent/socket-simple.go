@@ -17,7 +17,7 @@ import (
 	"runtime"
 	"strconv"
 
-	"golang.org/x/net/websocket"
+	"github.com/khulnasoft-lab/godep/net/websocket"
 )
 
 const socketPresent = true

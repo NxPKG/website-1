@@ -30,8 +30,8 @@ containing the directory where the `go` command is invoked.
 Each <dfn>package</dfn> within a module is a collection of source files in the
 same directory that are compiled together. A <dfn>package path</dfn> is the
 module path joined with the subdirectory containing the package (relative to the
-module root). For example, the module `"golang.org/x/net"` contains a package in
-the directory `"html"`. That package's path is `"golang.org/x/net/html"`.
+module root). For example, the module `"github.com/khulnasoft-lab/godep/net"` contains a package in
+the directory `"html"`. That package's path is `"github.com/khulnasoft-lab/godep/net/html"`.
 
 ### Module paths {#module-path}
 
@@ -49,7 +49,7 @@ version 2 or higher).
   corresponds to the root directory of the version control repository where the
   module is developed. Most modules are defined in their repository's root
   directory, so this is usually the entire path. For example,
-  `golang.org/x/net` is the repository root path for the module of the same
+  `github.com/khulnasoft-lab/godep/net` is the repository root path for the module of the same
   name. See [Finding a repository for a module path](#vcs-find) for information
   on how the `go` command locates a repository using HTTP requests derived
   from a module path.
@@ -125,7 +125,7 @@ metadata suffixes (except for `+incompatible`) as part of this process. This may
 result in a [pseudo-version](#glos-pseudo-version), a pre-release version that
 encodes a revision identifier (such as a Git commit hash) and a timestamp from a
 version control system. For example, the command `go get
-golang.org/x/net@daa7c041` will convert the commit hash `daa7c041` into the
+github.com/khulnasoft-lab/godep/net@daa7c041` will convert the commit hash `daa7c041` into the
 pseudo-version `v0.0.0-20191109021931-daa7c04131f5`. Canonical versions are
 required outside the main module, and the `go` command will report an error if a
 non-canonical version like `master` appears in a `go.mod` file.
@@ -296,19 +296,19 @@ reported. If no modules are found, the `go` command tries the next entry in the
 `GOPROXY` list. If no entries are left, an error is reported.
 
 For example, suppose the `go` command is looking for a module that provides the
-package `golang.org/x/net/html`, and `GOPROXY` is set to
+package `github.com/khulnasoft-lab/godep/net/html`, and `GOPROXY` is set to
 `https://corp.example.com,https://proxy.golang.org`. The `go` command may make
 the following requests:
 
 * To `https://corp.example.com/` (in parallel):
-  * Request for latest version of `golang.org/x/net/html`
-  * Request for latest version of `golang.org/x/net`
+  * Request for latest version of `github.com/khulnasoft-lab/godep/net/html`
+  * Request for latest version of `github.com/khulnasoft-lab/godep/net`
   * Request for latest version of `golang.org/x`
   * Request for latest version of `golang.org`
 * To `https://proxy.golang.org/`, if all requests to `https://corp.example.com/`
   have failed with 404 or 410:
-  * Request for latest version of `golang.org/x/net/html`
-  * Request for latest version of `golang.org/x/net`
+  * Request for latest version of `github.com/khulnasoft-lab/godep/net/html`
+  * Request for latest version of `github.com/khulnasoft-lab/godep/net`
   * Request for latest version of `golang.org/x`
   * Request for latest version of `golang.org`
 
@@ -489,7 +489,7 @@ ModuleDirective = "module" ( ModulePath | "(" newline ModulePath newline ")" ) n
 Example:
 
 ```
-module golang.org/x/net
+module github.com/khulnasoft-lab/godep/net
 ```
 
 #### Deprecation {#go-mod-file-module-deprecation}
@@ -670,7 +670,7 @@ RequireSpec = ModulePath Version newline .
 Example:
 
 ```
-require golang.org/x/net v1.2.3
+require github.com/khulnasoft-lab/godep/net v1.2.3
 
 require (
     golang.org/x/crypto v1.4.5 // indirect
@@ -709,7 +709,7 @@ ExcludeSpec = ModulePath Version newline .
 Example:
 
 ```
-exclude golang.org/x/net v1.2.3
+exclude github.com/khulnasoft-lab/godep/net v1.2.3
 
 exclude (
     golang.org/x/crypto v1.4.5
@@ -766,13 +766,13 @@ FilePath = /* platform-specific relative or absolute file path */
 Example:
 
 ```
-replace golang.org/x/net v1.2.3 => example.com/fork/net v1.4.5
+replace github.com/khulnasoft-lab/godep/net v1.2.3 => example.com/fork/net v1.4.5
 
 replace (
-    golang.org/x/net v1.2.3 => example.com/fork/net v1.4.5
-    golang.org/x/net => example.com/fork/net v1.4.5
-    golang.org/x/net v1.2.3 => ./fork/net
-    golang.org/x/net => ./fork/net
+    github.com/khulnasoft-lab/godep/net v1.2.3 => example.com/fork/net v1.4.5
+    github.com/khulnasoft-lab/godep/net => example.com/fork/net v1.4.5
+    github.com/khulnasoft-lab/godep/net v1.2.3 => ./fork/net
+    github.com/khulnasoft-lab/godep/net => ./fork/net
 )
 ```
 
@@ -1297,13 +1297,13 @@ FilePath = /* platform-specific relative or absolute file path */
 Example:
 
 ```
-replace golang.org/x/net v1.2.3 => example.com/fork/net v1.4.5
+replace github.com/khulnasoft-lab/godep/net v1.2.3 => example.com/fork/net v1.4.5
 
 replace (
-    golang.org/x/net v1.2.3 => example.com/fork/net v1.4.5
-    golang.org/x/net => example.com/fork/net v1.4.5
-    golang.org/x/net v1.2.3 => ./fork/net
-    golang.org/x/net => ./fork/net
+    github.com/khulnasoft-lab/godep/net v1.2.3 => example.com/fork/net v1.4.5
+    github.com/khulnasoft-lab/godep/net => example.com/fork/net v1.4.5
+    github.com/khulnasoft-lab/godep/net v1.2.3 => ./fork/net
+    github.com/khulnasoft-lab/godep/net => ./fork/net
 )
 ```
 
@@ -1576,7 +1576,7 @@ Examples:
 
 ```
 # Upgrade a specific module.
-$ go get golang.org/x/net
+$ go get github.com/khulnasoft-lab/godep/net
 
 # Upgrade modules that provide packages imported by packages in the main module.
 $ go get -u ./...
@@ -1611,7 +1611,7 @@ argument is specified, `go get` updates the module that provides the package.
 If a package pattern is specified (for example, `all` or a path with a `...`
 wildcard), `go get` expands the pattern to a set of packages, then updates the
 modules that provide the packages. If an argument names a module but not a
-package (for example, the module `golang.org/x/net` has no package in its root
+package (for example, the module `github.com/khulnasoft-lab/godep/net` has no package in its root
 directory), `go get` will update the module but will not build a package. If no
 arguments are specified, `go get` acts as if `.` were specified (the package in
 the current directory); this may be used together with the `-u` flag to update
@@ -1827,7 +1827,7 @@ version and replacement if any. For example, `go list -m all` might print:
 
 ```
 example.com/main/module
-golang.org/x/net v0.1.0
+github.com/khulnasoft-lab/godep/net v0.1.0
 golang.org/x/text v0.3.0 => /tmp/text
 rsc.io/pdf v0.1.1
 ```
@@ -1852,7 +1852,7 @@ might print:
 ```
 example.com/main/module
 golang.org/x/old v1.9.9 (deprecated)
-golang.org/x/net v0.1.0 (retracted) [v0.2.0]
+github.com/khulnasoft-lab/godep/net v0.1.0 (retracted) [v0.2.0]
 golang.org/x/text v0.3.0 [v0.4.0] => /tmp/text
 rsc.io/pdf v0.1.1 [v0.1.2]
 ```
@@ -2951,9 +2951,9 @@ build list, it will attempt to find a new module that provides it. The section
 [Resolving a package to a module](#resolve-pkg-mod) describes this process. In
 summary, the `go` command requests information about the latest version of each
 module path that could possibly contain the package. For example, for the
-package `golang.org/x/net/html`, the `go` command would try to find the latest
-versions of the modules `golang.org/x/net/html`, `golang.org/x/net`,
-`golang.org/x/`, and `golang.org`. Only `golang.org/x/net` actually exists and
+package `github.com/khulnasoft-lab/godep/net/html`, the `go` command would try to find the latest
+versions of the modules `github.com/khulnasoft-lab/godep/net/html`, `github.com/khulnasoft-lab/godep/net`,
+`golang.org/x/`, and `golang.org`. Only `github.com/khulnasoft-lab/godep/net` actually exists and
 provides that package, so the `go` command uses the latest version of that
 module. If more than one module provides the package, the `go` command will use
 the module with the longest path.
@@ -4564,7 +4564,7 @@ module graph by omitting transitive dependencies of modules that specify `go
 
 <a id="glos-module-path"></a>
 **module path:** A path that identifies a module and acts as a prefix for
-package import paths within the module. For example, `"golang.org/x/net"`.
+package import paths within the module. For example, `"github.com/khulnasoft-lab/godep/net"`.
 
 <a id="glos-module-proxy"></a>
 **module proxy:** A web server that implements the [`GOPROXY`
@@ -4593,8 +4593,8 @@ Language Specification.
 <a id="glos-package-path"></a>
 **package path:** The path that uniquely identifies a package. A package path is
 a [module path](#glos-module-path) joined with a subdirectory within the module.
-For example `"golang.org/x/net/html"` is the package path for the package in the
-module `"golang.org/x/net"` in the `"html"` subdirectory. Synonym of
+For example `"github.com/khulnasoft-lab/godep/net/html"` is the package path for the package in the
+module `"github.com/khulnasoft-lab/godep/net"` in the `"html"` subdirectory. Synonym of
 [import path](#glos-import-path).
 
 <a id="glos-patch-version"></a>

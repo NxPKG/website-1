@@ -1,12 +1,12 @@
-GET https://golang.org/x/net
+GET https://github.com/khulnasoft-lab/godep/net
 code == 200
-body contains <meta name="go-import" content="golang.org/x/net git https://go.googlesource.com/net">
-body contains http-equiv="refresh" content="0; url=https://pkg.go.dev/golang.org/x/net">
+body contains <meta name="go-import" content="github.com/khulnasoft-lab/godep/net git https://go.googlesource.com/net">
+body contains http-equiv="refresh" content="0; url=https://pkg.go.dev/github.com/khulnasoft-lab/godep/net">
 
-GET https://golang.org/x/net/suffix
+GET https://github.com/khulnasoft-lab/godep/net/suffix
 code == 200
-body contains <meta name="go-import" content="golang.org/x/net git https://go.googlesource.com/net">
-body contains http-equiv="refresh" content="0; url=https://pkg.go.dev/golang.org/x/net/suffix">
+body contains <meta name="go-import" content="github.com/khulnasoft-lab/godep/net git https://go.googlesource.com/net">
+body contains http-equiv="refresh" content="0; url=https://pkg.go.dev/github.com/khulnasoft-lab/godep/net/suffix">
 
 GET https://golang.org/x/pkgsite
 code == 200

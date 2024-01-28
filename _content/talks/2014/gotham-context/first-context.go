@@ -7,7 +7,7 @@ import (
 	"math/rand"
 	"time"
 
-	"golang.org/x/net/context"
+	"github.com/khulnasoft-lab/godep/net/context"
 )
 
 type Result struct {

@@ -876,7 +876,7 @@ rather than rejecting them as invalid.
 
 <!-- https://go.dev/issue/53896 -->
 HTTP/2 stream errors returned by `net/http` functions may be converted
-to a [`golang.org/x/net/http2.StreamError`](/pkg/golang.org/x/net/http2/#StreamError) using
+to a [`github.com/khulnasoft-lab/godep/net/http2.StreamError`](/pkg/github.com/khulnasoft-lab/godep/net/http2/#StreamError) using
 [`errors.As`](/pkg/errors/#As).
 
 <!-- https://go.dev/cl/397734 -->
@@ -1118,7 +1118,7 @@ analogous to [`utf8.AppendRune`](/pkg/unicode/utf8/#AppendRune).
 
 <!-- Silence false positives from x/build/cmd/relnote: -->
 <!-- https://go.dev/issue/45964 was documented in Go 1.18 release notes but closed recently -->
-<!-- https://go.dev/issue/52114 is an accepted proposal to add golang.org/x/net/http2.Transport.DialTLSContext; it's not a part of the Go release -->
+<!-- https://go.dev/issue/52114 is an accepted proposal to add github.com/khulnasoft-lab/godep/net/http2.Transport.DialTLSContext; it's not a part of the Go release -->
 <!-- CL 431335: cmd/api: make check pickier about api/*.txt -->
 <!-- CL 447896 api: add newline to 55301.txt; modified api/next/55301.txt -->
 <!-- CL 449215 api/next/54299: add missing newline; modified api/next/54299.txt -->

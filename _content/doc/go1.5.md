@@ -814,7 +814,7 @@ The fixes harden the implementation against incorrect and malicious inputs.
     field.
     It is supported by `http.Transport`.
     The `Cancel` field's type is compatible with the
-    [`context.Context.Done`](https://godoc.org/golang.org/x/net/context)
+    [`context.Context.Done`](https://godoc.org/github.com/khulnasoft-lab/godep/net/context)
     return value.
   - Also in the [`net/http`](/pkg/net/http/) package,
     there is code to ignore the zero [`Time`](/pkg/time/#Time) value

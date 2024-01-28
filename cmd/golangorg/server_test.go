@@ -17,7 +17,7 @@ import (
 	"strings"
 	"testing"
 
-	"golang.org/x/net/html"
+	"github.com/khulnasoft-lab/godep/net/html"
 	"golang.org/x/website/internal/webtest"
 )
 

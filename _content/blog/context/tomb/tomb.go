@@ -5,7 +5,7 @@
 package tomb
 
 import (
-	"golang.org/x/net/context"
+	"github.com/khulnasoft-lab/godep/net/context"
 	tomb "gopkg.in/tomb.v2"
 )
 

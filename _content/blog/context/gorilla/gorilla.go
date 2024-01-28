@@ -9,7 +9,7 @@ import (
 	"net/http"
 
 	gcontext "github.com/gorilla/context"
-	"golang.org/x/net/context"
+	"github.com/khulnasoft-lab/godep/net/context"
 )
 
 // NewContext returns a Context whose Value method returns values associated

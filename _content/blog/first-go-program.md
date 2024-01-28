@@ -124,7 +124,7 @@ But even more striking is how much we have learned about _writing_ Go code.
 For instance, Rob called his method receivers `this`, but now we use shorter
 context-specific names. There are hundreds of more significant examples
 and to this day we're still discovering better ways to write Go code.
-(Check out the [glog package](https://github.com/golang/glog)'s clever trick for
-[handling verbosity levels](https://github.com/golang/glog/blob/c6f9652c7179652e2fd8ed7002330db089f4c9db/glog.go#L893).)
+(Check out the [logger package](https://github.com/khulnasoft-lab/godep/logger)'s clever trick for
+[handling verbosity levels](https://github.com/khulnasoft-lab/godep/logger/blob/c6f9652c7179652e2fd8ed7002330db089f4c9db/logger.go#L893).)
 
 I wonder what we'll learn tomorrow.

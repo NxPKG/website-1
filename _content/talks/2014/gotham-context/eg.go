@@ -6,7 +6,7 @@ import (
 	"xpkg"
 	"ypkg"
 
-	"golang.org/x/net/context"
+	"github.com/khulnasoft-lab/godep/net/context"
 )
 
 func before(x xpkg.X, y ypkg.Y) error { // HL

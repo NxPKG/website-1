@@ -53,7 +53,7 @@ in which the package's source code resides.
 
 Import paths should be globally unique, so use the path of your source repository as its base.
 For instance, the `websocket` package from the `go.net` sub-repository has
-an import path of `"golang.org/x/net/websocket"`.
+an import path of `"github.com/khulnasoft-lab/godep/net/websocket"`.
 The Go project owns the path `"github.com/golang"`,
 so that path cannot be used by another author for a different package.
 Because the repository URL and import path are one and the same,

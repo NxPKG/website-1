@@ -170,8 +170,8 @@ Viper [supports nested structures](https://scene-si.org/2017/04/20/managing-conf
       - text: spf13/pflag
         url: https://pkg.go.dev/github.com/spf13/pflag?tab=overview
         desc: A drop-in replacement for Go’s flag package, implementing POSIX/GNU-style flags
-      - text: golang/glog
-        url: https://pkg.go.dev/github.com/golang/glog?tab=overview
+      - text: golang/logger
+        url: https://pkg.go.dev/github.com/khulnasoft-lab/godep/logger?tab=overview
         desc: Leveled execution logs for Go
       - text: go-prompt
         url: https://pkg.go.dev/github.com/c-bata/go-prompt?tab=overview

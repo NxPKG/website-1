@@ -289,7 +289,7 @@ Previously, `ParseAddressList` was only shown in the package overview (`go` `doc
 
 ### Fix {#fix}
 
-The `go`&nbsp;`fix` tool now replaces imports of `"golang.org/x/net/context"`
+The `go`&nbsp;`fix` tool now replaces imports of `"github.com/khulnasoft-lab/godep/net/context"`
 with `"context"`.
 (Forwarding aliases in the former make it completely equivalent to the latter when using Go 1.9 or later.)
 

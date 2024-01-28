@@ -34,13 +34,13 @@ a significant speedup in compile time and a reduction in binary size by as much 
 Programs should run a bit faster due to speedups in the garbage collector and optimizations in the standard library.
 Programs with many idle goroutines will experience much shorter garbage collection pauses than in Go 1.6.
 
-Over the past few years, the [golang.org/x/net/context](https://godoc.org/golang.org/x/net/context/)
+Over the past few years, the [github.com/khulnasoft-lab/godep/net/context](https://godoc.org/github.com/khulnasoft-lab/godep/net/context/)
 package has proven to be essential to many Go applications.
 Contexts are used to great effect in applications related to networking, infrastructure, and microservices
 (such as [Kubernetes](http://kubernetes.io/) and [Docker](https://www.docker.com/)).
 They make it easy to enable cancellation, timeouts, and passing request-scoped data.
 To make use of contexts within the standard library and to encourage more extensive use,
-the package has been moved from the [x/net](https://godoc.org/golang.org/x/net/context/) repository
+the package has been moved from the [x/net](https://godoc.org/github.com/khulnasoft-lab/godep/net/context/) repository
 to the standard library as the [context](/pkg/context/) package.
 Support for contexts has been added to the
 [net](/pkg/net/),

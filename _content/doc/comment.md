@@ -700,7 +700,7 @@ For example:
 	// set a cookie for bar.com.
 	//
 	// A public suffix list implementation is in the package
-	// golang.org/x/net/publicsuffix.
+	// github.com/khulnasoft-lab/godep/net/publicsuffix.
 	type PublicSuffixList interface {
 		...
 	}

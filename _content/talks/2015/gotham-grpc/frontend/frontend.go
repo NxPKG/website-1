@@ -13,7 +13,7 @@ import (
 	"strings"
 	"sync"
 
-	"golang.org/x/net/context"
+	"github.com/khulnasoft-lab/godep/net/context"
 	pb "golang.org/x/talks/content/2015/gotham-grpc/search"
 	"google.golang.org/grpc"
 )
